@@ -1,8 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { arrayMoveSlice } from '../features/Array/arraySlice';
 
+// ルートreducer作成
 export const store = configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
+  reducer: arrayMoveSlice.reducer,
 });
